@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import "./AllJob.css";
 
 const SeeAllEmployee = () => {
@@ -59,12 +60,14 @@ const SeeAllEmployee = () => {
               <td>{job?.vacancy}</td>
               <td>{job?.salary}</td>
               <td>
-                <button
+               <Link to={`/${job?.id}`}>
+               <button
                   className="delete-btn"
                 
                 >
                   <i className="fas fa-eye"></i>
                 </button>
+               </Link>
               </td>
             </tr>
           ))}

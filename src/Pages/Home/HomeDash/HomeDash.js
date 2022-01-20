@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import useAuth from '../../../hook/useAuth';
 import "./HomeDash.css";
 const HomeDash = () => {
   const [totalCount, setTotalCount] = useState([]);
-
+const {setAllJobs}=useAuth()
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/Sejan157218/it-job-data/main/index.js")
       .then((res) => res.json())
       .then((data) => {
         setTotalCount(data);
+        setAllJobs(data)
       });
   }, []);
 

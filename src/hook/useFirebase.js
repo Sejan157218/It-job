@@ -11,8 +11,6 @@ const useFirebase = () => {
     const [authError, setAuthError] = useState('');
 
 
-
-
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
     // handler to register
