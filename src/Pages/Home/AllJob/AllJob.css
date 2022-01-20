@@ -1,0 +1,55 @@
+.table-custom ,td{
+    color: #fff;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: #fff;
+}
+.delete-btn{
+    background-color: #367074;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+}
+.delete-btn:hover{
+    background-color: #ffffff3d;
+    color: #367074;
+}
+.tbody, td, tfoot, th, thead, tr {
+    border-color: none;
+    border-style: none;
+    border-width: 0;
+}
+.search-button{
+    background: linear-gradient(180deg,#69ddc9,#4ec1b6);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 37px -9px rgb(0 0 0 / 75%);
+    color: #fff;
+    cursor: pointer;
+    font-size: .8em;
+    margin: 1em 0;
+    padding: 0.2em 3em;
+    width: auto;
+}
+.search-input{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #5a6374;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: inherit;
+    color: #fff;
+    display: inline-block;
+    font-family: inherit;
+    margin: 0 0 0.8em;
+    outline: 0;
+    padding: 0.8em 2em 10px 0;
+
+}
+.search-input option {
+  background-color: #20aeb7;
+}
+
+
