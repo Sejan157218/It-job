@@ -10,6 +10,7 @@ import AuthProvider from "./Context/AuthProvider";
 import PrivateRoute from "./Share/PrivateRoute/PrivateRoute";
 import ViewJob from "./Pages/Home/ViewJob/ViewJob";
 import Apply from "./Pages/Home/Apply/Apply";
+import Success from "./Pages/Home/Success/Success";
 
 function App() {
   return (
@@ -40,6 +41,14 @@ function App() {
                 element={
                   <PrivateRoute>
                     <Apply />
+                  </PrivateRoute>
+                }
+              />
+               <Route
+                path="success"
+                element={
+                  <PrivateRoute>
+                    <Success />
                   </PrivateRoute>
                 }
               />

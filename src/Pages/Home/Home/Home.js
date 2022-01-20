@@ -18,7 +18,7 @@ const Home = () => {
           <div className="user-img-div">
           {user.photoURL ?  <img src={user?.photoURL} alt="" /> :  <img src={userImg} alt="" /> }
            
-            {user.displayName ? <span> {user?.displayName} </span>: <span>const first = useRef(second); Name</span> }
+            {user.displayName ? <span> {user?.displayName} </span>: <span>User Name</span> }
            
           </div>
           <div className="text-start mt-4">
